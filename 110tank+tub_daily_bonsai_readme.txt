@@ -1,0 +1,21 @@
+\zoo\raw\CrabLab\Bonsai\110tank+tub_daily_bonsai_readme.txt composed by Sanna (s.titus@ucl.ac.uk) 20 January 2025 
+
+This document provides instructions for how to operate the 110 tank and tub crabitat's daily bonsai acquisition pipeline. This document is identical to the one stored locally on the 110-Crab desktop. Completing all steps will allow videos to be automatically acquired and uploaded to the ceph, at \raw\CrabLab\CrabitatCam_daily. 
+
+If Bonsai acquisition were to cease, please restart the workflow by: 
+1. open Bonsai application (desktop folder bonsai)
+2. load tank+tub_daily.bonsai workflow 
+3. ensure both group workflows are active (not greyed out) for each tank and tub crabitat. In both group workflows, confirm the 'start recording' time and 'window trigger' are appropriate for the current season's photoperiod: winter = 09:00:00, 10:00:00 ; spring/autumn = 08:00:00, 12:00:00 ; summer = 07:00:00, 15:00:00
+4. hit the green arrow start button 
+5. right click each group workflow to reveal it's default editor, and double click each camera capture node for the tank and tub. 
+6. check the window that pops up shows the tank and tub webcam's perspective (this means bonsai is acquiring sucessfully!). If either camera doesn't connect, check the physical cord connection. You can also verify the videos are being automatically written to E:\CrabitatCam_daily\
+7. begin the automatic ceph upload pipeline (otherwise the computer will run out of storage space within a couple days); first check the ceph is mounted to the desktop as mount letter Z: (within file explorer, navigate to This PC and it should be marked as green). If the ceph is not connected, right click this pc > map network drive > type \\ceph-gw02.hpc.swc.ucl.ac.uk\zoo > log in via AD\swcusername (insert your swc username here & log in with swc password) 
+8. double click BOTH batch files E:\CrabitatCam_daily\robocopy\robocopy-script_tank.bat & E:\CrabitatCam_daily\robocopy\robocopy-script_tub.bat - it should bring up a cmd window automatically, and begin to transfer files. ensure no errors are reported, and then minimise the windows to leave these running idefinitely in the background. 
+
+Is the video being written at an FPS which does not match the acquisition?** Sometimes, when the desktop is restarted, the Logitech webcams 'forget' their settings. If you notice that videos are being written at 2x speed, quit Bonsai and reopen the Logi Capture app. Ensure the 'flicker' is set to 60FPS. Open Bonsai, and ensure that video writer is set to 30FPS for both crabitats. Interestingly, this outputs a video at the correct speed (there may be something corrupted in this, because it used to be 1:1 FPS for Bonsai:Logi Capture, but since the workflow has been having issues since mid 2024 post Bonsai update, we have to halve FPS in Bonsai for now). 
+**2025 update: These issues are likely because CrabitatRack has an AMD threadripper motherboard and multi-core, multi-processor CPU. This hardware is known to cause issues with video acquisition (from Goncalo himself). The B2 desktop was replaced with single-core, single processor CPUs and is now reliable with 4x FLIR cameras. We have a different desktop (110-Dome) to record via Bonsai in the 110 dome, but the 110 crabitats are still filmed with this CrabitatRack. Thus, the written videos for tub will be slightly off (although theoretically, it can spontaneously switch to the tank acquisition being slightly off instead). To mitigate this, a real-time clock is visible in the tub videos. 
+
+This desktop's settings already inhibit sleep (i.e., windows sleep settings = never). Every 30 days*, log into the desktop to pause windows updates as these will spontaneously cause the desktop to restart (thus ceasing the bonsai and automatic upload pipeline). *There is a recurring event within the crabitat outlook calendar reminding to pause updates on every third Monday. 
+
+For further information on acquired videos, reference \raw\CrabLab\CrabitatCam_daily\readme.txt. 
+Locate zips of backup Bonsai environments in this folder (the workflows are version sensitive, for Bonsai and it's interior packages). One can also reference the bonsai.config files for these settings. If using a BlackFlyS, note the version of SpinView necessary for Bonsai compatibility. 
