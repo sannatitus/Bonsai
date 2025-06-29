@@ -9,7 +9,7 @@ This folder contains functional Bonsai environments and workflow files for autom
 ### `/CrabitatCam`
 - Contains workflows designed for daily automatic video camera acqusition of West African fiddler crabs (*Afruca tangeri*) in captive enviroments.
 - `/110` subfolder workflows acquire footage from 7:00-19:00, using Logitech Brio 4K webcams.
-- `/B2` subfolder films 24/7, with frames synced across four cameras (FLIR BlackFly S) via a HARP Output Expander. Videos and frame metadata are binned by the hour. This acquisition pipeline incorporates some components from the Aeon project at the Sainsbury Wellcome Centre, specfically Aeon.Aquisitiion nodes.
+- `/B2` subfolder films 24/7, with frames synced across four cameras (FLIR BlackFly S) via a HARP Output Expander. Videos and frame metadata are binned by the hour. This acquisition pipeline incorporates some components from the [Aeon project at the Sainsbury Wellcome Centre](https://github.com/SainsburyWellcomeCentre/aeon_acquisition), specifically Aeon.Acquisition Bonsai nodes.
 
   
 ### `/Dome`
