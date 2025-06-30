@@ -8,9 +8,9 @@ This folder contains functional Bonsai environments and workflow files for autom
 These should only need to be installed once on a fresh new system, and are not required if simply refreshing the install or deploying to a new folder.
 
 - Windows 10
-- Git for Windows (recommended for cloning and manipulating this repository), or install Bonsai manually 
-- Visual C++ Redistributable for Visual Studio 2012 (native dependency for OpenCV)
-- Spinnaker SDK 1.29.0.5 (device drivers for FLIR cameras). [Install](https://www.teledynevisionsolutions.com/en-GB/products/spinnaker-sdk/?model=Spinnaker%20SDK&vertical=machine%20vision&segment=iis) via FLIR website: Download > archive > 1.29.0.5 > SpinnakerSDK_FULL_1.29.0.5_x64.exe
+- [Git for Windows](https://gitforwindows.org/) (recommended for cloning and manipulating this repository)
+- [Visual C++ Redistributable for Visual Studio 2012](https://www.microsoft.com/en-us/download/details.aspx?id=30679) (native dependency for OpenCV)
+- [Spinnaker SDK 1.29.0.5](https://www.teledynevisionsolutions.com/en-GB/products/spinnaker-sdk/?model=Spinnaker%20SDK&vertical=machine%20vision&segment=iis) (device drivers for FLIR cameras). Install via FLIR website: Download > archive > 1.29.0.5 > SpinnakerSDK_FULL_1.29.0.5_x64.exe
 
 ---
 
