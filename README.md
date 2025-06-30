@@ -10,7 +10,7 @@ These should only need to be installed once on a fresh new system, and are not r
 - Windows 10
 - Git for Windows (recommended for cloning and manipulating this repository), or install Bonsai manually 
 - Visual C++ Redistributable for Visual Studio 2012 (native dependency for OpenCV)
-- Spinnaker SDK 1.29.0.5 (device drivers for FLIR cameras). (Install)[https://www.teledynevisionsolutions.com/en-GB/products/spinnaker-sdk/?model=Spinnaker%20SDK&vertical=machine%20vision&segment=iis] via FLIR website: Download > archive > 1.29.0.5 > SpinnakerSDK_FULL_1.29.0.5_x64.exe
+- Spinnaker SDK 1.29.0.5 (device drivers for FLIR cameras). [Install](https://www.teledynevisionsolutions.com/en-GB/products/spinnaker-sdk/?model=Spinnaker%20SDK&vertical=machine%20vision&segment=iis) via FLIR website: Download > archive > 1.29.0.5 > SpinnakerSDK_FULL_1.29.0.5_x64.exe
 
 ---
 
